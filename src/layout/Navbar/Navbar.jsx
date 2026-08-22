@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 // import listItem
 import ListItem from "./elements/ListItem";
@@ -15,11 +15,11 @@ export default function Navbar() {
     {id : 5 , title : 'Collection' , hrefLink : '/Collection'},
     {id : 6 , title : 'FAQ' , hrefLink : '/FAQ'},
   ])
-  
+
   const { pathname } = useLocation()
 
   return (
-    <div className='flex items-center justify-between static mt-4 rounded-2xl w-full h-20 px-12.5 container bg-white/20 **:text-[#091E51] **:hover:text-[#228EE5]'>
+    <div className='flex items-center justify-between static mt-4 rounded-2xl w-full h-20 px-12.5 container bg-white/20 *:text-[#091E51]'>
       {/* logo */}
       <Link to='/'>
         <img src='/src/assets/images/Logo-Dark.svg' className='w-24 h-24' alt='logo' />

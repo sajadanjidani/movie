@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root{
   --color-background : #EBFAFF;
   --color-text : #030A1B;
@@ -11,6 +13,7 @@
   --color-text : #EBFAFF;
   --color-text-secondary : #0CC2FF;
 }
+
 
 @layer components {
   .container {
