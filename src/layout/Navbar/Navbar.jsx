@@ -9,7 +9,7 @@ import IconButton from "./elements/IconButton";
 
 export default function Navbar() {
   
-    const { darkMode } = useTheme();
+  const { darkMode } = useTheme();
 
   const [listItemInfo , setListItemInfo] = useState([
     {id : 1 , title : 'Home' , hrefLink : '/'},
@@ -25,9 +25,15 @@ export default function Navbar() {
   return (
     <div className='flex items-center justify-between static mt-4 rounded-2xl w-full h-20 px-12.5 container bg-white/20 dark:bg-[#1A1919]/30 *:text-[#091E51] dark:*:text-white'>
       {/* logo */}
+      {darkMode ? (
+        <Link to='/'>
+          <img src='/src/assets/images/Logo-Light.svg' className='w-24 h-24' alt='logo' />
+        </Link>
+      ) : (
         <Link to='/'>
           <img src='/src/assets/images/Logo-Dark.svg' className='w-24 h-24' alt='logo' />
         </Link>
+      )}
       {/* menu */}
         <ul className="flex items-center gap-7 h-full">
           {listItemInfo.map((item) => 

@@ -94,13 +94,13 @@ export default function IconButton() {
         </li>
     {/* Mode */}
         {darkMode ? (
-                <li className="hover:cursor-pointer">
-                    <IoMoon onClick={() => changeModeHandler()} size={24}/>
-                </li>
+            <li className="hover:cursor-pointer">
+                <MdSunny onClick={() => changeModeHandler()} size={24}/>
+            </li>
         ) : (
-                <li className="hover:cursor-pointer">
-                    <MdSunny onClick={() => changeModeHandler()} size={24}/>
-                </li>
+            <li className="hover:cursor-pointer">
+                <IoMoon onClick={() => changeModeHandler()} size={24}/>
+            </li>
         )}
 
     </>
