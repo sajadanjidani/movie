@@ -1,10 +1,21 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
-export default function ListItem({hrefLink , title , isActive}) {
+export default function ListItem({ path, label }) {
+
   return (
-    <NavLink to={hrefLink}>
-        <li className="md:text-base sm:text-sm">{title}</li>
-        {isActive && <div className="mx-auto -mb-2 w-full h-1 bg-[#228EE5] blur-xs rounded-full"></div>}
-    </NavLink>
-  )
+
+    <li className="md:text-base sm:text-sm">
+      <NavLink to={path}>
+        {
+          ({isActive}) => (
+            <>
+              {label}
+              { isActive && <span className="block mx-auto -mb-2 w-full h-1 bg-[#228EE5] blur-xs rounded-full"/> }
+            </>
+          )
+        }
+      </NavLink>
+    </li>
+
+  );
 }
