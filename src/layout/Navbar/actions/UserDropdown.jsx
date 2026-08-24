@@ -1,4 +1,4 @@
-import { userMenuItems } from "../../data/userMenuItems";
+import { userMenuItems } from "../data/userMenuItems";
 
 
 export default function UserDropdown({user}) {

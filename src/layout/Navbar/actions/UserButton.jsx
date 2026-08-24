@@ -1,5 +1,5 @@
 import { FaUser } from "react-icons/fa6";
-import UserDropdown from "./User/UserDropdown";
+import UserDropdown from "./UserDropdown";
 
 
 export default function UserButton(){

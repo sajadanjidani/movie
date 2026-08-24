@@ -1,7 +1,7 @@
-import SearchButton from "../actions/Search/SearchButton";
-import NotificationButton from "../actions/Notification/NotificationButton";
-import UserButton from "../actions/User/UserButton";
-import ThemeButton from "../actions/Theme/ThemeButton";
+import SearchButton from "../actions/SearchButton";
+import NotificationButton from "../actions/NotificationButton";
+import UserButton from "../actions/UserButton";
+import ThemeButton from "../actions/ThemeButton";
 
 
 export default function NavbarActions(){
