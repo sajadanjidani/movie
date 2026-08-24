@@ -1,5 +1,6 @@
 import HeroContent from "./components/HeroContent"
 import MovieRating from "./components/MovieRating"
+import HeroActions from "./components/HeroActions"
 
 export default function HeroInfo() {
   return (
@@ -7,6 +8,7 @@ export default function HeroInfo() {
       <div className="row-start-2 px-16">
         <HeroContent />
         <MovieRating />
+        <HeroActions />
       </div>
     </div>
   )
