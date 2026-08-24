@@ -12,7 +12,7 @@ export default function Hero() {
       
       <BgHeader/>
 
-      <div className="w-full h-dvh flex">
+      <div className="w-full h-dvh lg:flex grid">
         <HeroInfo/>
         
         <HeroSlider/>

@@ -13,11 +13,11 @@ export default function HeroActions() {
   
   return (
     <div className="flex gap-3 mt-3">
-        <Link href={watchUrl} className="flex justify-center items-center gap-2 w-48 h-11 bg-[#228EE5] font-semibold rounded-4xl">
+        <Link href={watchUrl} className="flex justify-center items-center gap-2 md:w-48 w-33 h-11 bg-[#228EE5] font-semibold rounded-4xl md:text-base sm:text-sm text-xs">
             <FaPlay className="size-3"/>
             Whatch Movie
         </Link>
-        <Link href={detailsUrl} className="flex justify-center items-center gap-2 w-32 h-11 border-2 border-[#228EE5] font-semibold rounded-4xl">
+        <Link href={detailsUrl} className="flex justify-center items-center gap-2 md:w-32 w-27 h-11 border-2 border-[#228EE5] font-semibold rounded-4xl md:text-base sm:text-sm text-xs">
             More Info
             <GoArrowRight className="size-4"/>
         </Link>
