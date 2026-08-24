@@ -1,9 +1,9 @@
-import Header from "./components/Hero/Hero"
+import Hero from './components/Hero/Hero'
 
 export default function Home() {
   return (
     <div>
-      <Header />
+      <Hero />
     </div>
   )
 }
