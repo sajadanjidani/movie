@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import { FaPlay } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
 
-
-
-
 export default function HeroActions() {
+
   return (
     <div className="flex gap-3 mt-3">
         <Link href="/" className="flex justify-center items-center gap-2 w-48 h-11 bg-[#228EE5] font-semibold rounded-4xl">

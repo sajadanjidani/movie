@@ -1,4 +1,4 @@
-import bgImage from '@/assets/images/Home/Hero/background.jpg'
+import bgImage from '@/assets/images/Home/Hero/MissionImposibleBg.jpg'
 
 export default function HeroBackground() {
   return (
