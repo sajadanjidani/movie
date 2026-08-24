@@ -1,6 +1,6 @@
 import bgImage from '@/assets/images/Home/Header/background.jpg'
 
-export default function BgHeader() {
+export default function HeroBackground() {
   return (
     <div className="relative">
       <img src={bgImage} alt="background" className='absolute w-full h-dvh object-cover'/>
