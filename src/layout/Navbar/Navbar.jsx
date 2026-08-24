@@ -23,7 +23,7 @@ export default function Navbar(){
   } , [pathname])
 
  return (
-   <nav className="flex items-center justify-between static w-[98%] sm:h-20 h-16 mt-4 mx-auto lg:px-12.5 md:px-0 md:pr-4 pr-4 rounded-2xl bg-white/20 dark:bg-[#1A1919]/30 *:text-[#091E51] dark:*:text-white">
+   <nav className="absolute left-0 right-0 z-50 flex items-center justify-between w-[98%] sm:h-20 h-16 mt-4 mx-auto lg:px-12.5 md:px-0 md:pr-4 pr-4 rounded-2xl bg-white/20 dark:bg-[#1A1919]/30 *:text-[#091E51] dark:*:text-white">
 
       <Logo />
 
