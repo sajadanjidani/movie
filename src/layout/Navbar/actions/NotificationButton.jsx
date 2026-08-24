@@ -1,5 +1,5 @@
 import { FaBell } from "react-icons/fa";
-import { notifications } from "../../data/notifications";
+import { notifications } from "../data/notifications";
 
 
 export default function NotificationButton(){
