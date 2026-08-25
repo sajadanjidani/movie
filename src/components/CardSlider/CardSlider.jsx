@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import Card from "../Card/Card";
 
 const items = Array.from({ length: 24 });
 
@@ -16,7 +17,7 @@ export default function CardSlider() {
 
   const maxIndex = totalItems - visibleItems;
 
-  const itemWidth = 210;
+  const itemWidth = 208;
  
   const gap = 50;
 
@@ -81,7 +82,7 @@ export default function CardSlider() {
     >
 
       <div
-        className={`flex gap-5 ${
+        className={`flex gap-11.5 mt-5 ${
           isDragging ? "" : "transition-transform duration-300 ease-out"
         }`}
         style={{
@@ -90,9 +91,8 @@ export default function CardSlider() {
       >
 
         {items.map((_, index) => (
-          <div
+          <Card
             key={index}
-            className="min-w-20 h-20 bg-red-500"
           />
         ))}
 
