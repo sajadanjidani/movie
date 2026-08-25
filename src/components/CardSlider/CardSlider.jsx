@@ -10,15 +10,15 @@ export default function CardSlider() {
   const startX = useRef(0);
   const startTranslateX = useRef(0);
 
-  const visibleItems = 12;
+  const visibleItems = 6;
 
   const totalItems = items.length;
 
   const maxIndex = totalItems - visibleItems;
 
-  const itemWidth = 80;
+  const itemWidth = 210;
  
-  const gap = 20;
+  const gap = 50;
 
   const step = itemWidth + gap;
 
