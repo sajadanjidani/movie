@@ -1,3 +1,5 @@
+import CardSlider from "../CardSlider/CardSlider";
+
 // icons
 import { FaArrowRight } from "react-icons/fa";
 
@@ -20,7 +22,7 @@ export default function AdvancedSection() {
 
     {/* slider section */}
 
-    
+    <CardSlider />
 
     </div>
   )
