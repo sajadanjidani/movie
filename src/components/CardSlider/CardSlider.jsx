@@ -10,7 +10,7 @@ export default function CardSlider() {
 
   return (
     <div ref={emblaRef} className="overflow-hidden">
-      <div className="flex mt-8 gap-10">
+      <div className="flex mt-5 gap-10">
 
         <Card />
         <Card />
