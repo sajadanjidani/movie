@@ -1,6 +1,8 @@
 import useEmblaCarousel from "embla-carousel-react";
 import CategoryButton from "../CategoryButton/CategoryButton";
 
+import { categoryDatas } from "../../data/categoryDatas";
+
 export default function CategorySlider() {
 
   const [emblaRef] = useEmblaCarousel({
@@ -12,16 +14,9 @@ export default function CategorySlider() {
     <div ref={emblaRef} className="overflow-hidden">
       <form className="flex mt-1 gap-6">
 
-        <CategoryButton />
-        <CategoryButton />
-        <CategoryButton />
-        <CategoryButton />
-        <CategoryButton />
-        <CategoryButton />
-        <CategoryButton />
-        <CategoryButton />
-        <CategoryButton />
-        <CategoryButton />
+        {categoryDatas.map((category) => (
+          <CategoryButton key={category.id} {...category} />
+        ))}
 
       </form>
     </div>
