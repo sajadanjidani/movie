@@ -6,6 +6,8 @@ export default function Home() {
     <div className='overflow-x-hidden'>
       <Hero />
       <AdvancedSection/>
+      <AdvancedSection/>
+      <AdvancedSection/>
     </div>
   )
 }
