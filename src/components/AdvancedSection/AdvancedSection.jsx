@@ -1,4 +1,5 @@
 import CardSlider from "../CardSlider/CardSlider";
+import CategorySlider from "../CategorySlider/CategorySlider";
 
 // icons
 import { FaArrowRight } from "react-icons/fa";
@@ -6,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function AdvancedSection() {
   return (
-    <div className="w-full h-96 mt-24 px-14">
+    <div className="w-full h-auto mt-24 px-14">
     
     {/* title section */}
     
@@ -19,10 +20,14 @@ export default function AdvancedSection() {
         </a>
 
       </div>
+    
+      {/* Category Slider */}
 
-    {/* slider section */}
+      <CategorySlider />
 
-    <CardSlider />
+      {/* slider section */}
+
+      <CardSlider />
 
     </div>
   )

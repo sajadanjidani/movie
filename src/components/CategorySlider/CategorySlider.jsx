@@ -1,7 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import CategoryButton from "../CategoryButton/CategoryButton";
 
-export default function CardSlider() {
+export default function CategorySlider() {
 
   const [emblaRef] = useEmblaCarousel({
     loop: false,
@@ -10,7 +10,7 @@ export default function CardSlider() {
 
   return (
     <div ref={emblaRef} className="overflow-hidden">
-      <div className="flex mt-5 gap-10">
+      <form className="flex mt-1 gap-6">
 
         <CategoryButton />
         <CategoryButton />
@@ -23,7 +23,7 @@ export default function CardSlider() {
         <CategoryButton />
         <CategoryButton />
 
-      </div>
+      </form>
     </div>
   );
 }
