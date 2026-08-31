@@ -4,7 +4,6 @@ import AdvancedSection from '../../components/AdvancedSection/AdvancedSection'
 import { sectionDatas } from '../../data/sectionDatas'
 
 export default function Home() {
-  console.log(sectionDatas[0])
   return (
     <div className='overflow-x-hidden'>
       <Hero />

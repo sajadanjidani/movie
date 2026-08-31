@@ -8,13 +8,13 @@ export function HeroProvider({ children }) {
 
   const [counter,setCounter] = useState(0);
 
-  const title = HeroDatas[counter].title;
-  const description = HeroDatas[counter].description;
+  const title = HeroDatas[counter].originalTitle;
+  const description = HeroDatas[counter].plot;
   const rating = HeroDatas[counter].rating;
-  const watchUrl = HeroDatas[counter].watchUrl;
-  const detailsUrl = HeroDatas[counter].detailsUrl;
-  const image = HeroDatas[counter].image;
-  const cover = HeroDatas[counter].cover;
+  const watchUrl = `https://www.imdb.com/title/${HeroDatas[counter].id}`;
+  const detailsUrl = `https://www.imdb.com/title/${HeroDatas[counter].id}`;
+  const image = HeroDatas[counter].bgImage;
+  const cover = HeroDatas[counter].poster;
 
   useEffect(() => {
 

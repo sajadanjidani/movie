@@ -15,16 +15,16 @@ export default function HeroSlider() {
       <div className="h-full row-start-2 flex items-end md:justify-start justify-center">
         <div className="w-4/5 h-44 flex items-center justify-center">
             <div className="md:w-36 md:h-36 sm:w-34 sm:h-34 w-19 h-19 border border-white rounded-l-xl overflow-hidden">
-                <img src={HeroDatas[prevImage].cover} alt="movieCover" className="w-full h-full object-cover" />
+                <img src={HeroDatas[prevImage].poster} alt="movieCover" className="w-full h-full object-fill" />
             </div>
             <div className="md:w-44 md:h-44 sm:w-40 sm:h-40 w-23 h-23 border border-white rounded-xl overflow-hidden">
-                <img src={HeroDatas[mainImage].cover} alt="movieCover" className="w-full h-full object-cover" />
+                <img src={HeroDatas[mainImage].poster} alt="movieCover" className="w-full h-full object-fill" />
             </div>
             <div className="md:w-36 md:h-36 sm:w-34 sm:h-34 w-19 h-19 border border-white overflow-hidden">
-                <img src={HeroDatas[nextImage].cover} alt="movieCover" className="w-full h-full object-cover" />
+                <img src={HeroDatas[nextImage].poster} alt="movieCover" className="w-full h-full object-fill" />
             </div>
             <div className="md:w-36 md:h-36 sm:w-34 sm:h-34 w-19 h-19 border border-white rounded-r-xl overflow-hidden">
-                <img src={HeroDatas[nextByImage].cover} alt="movieCover" className="w-full h-full object-cover" />
+                <img src={HeroDatas[nextByImage].poster} alt="movieCover" className="w-full h-full object-fill" />
             </div>
         </div>
       </div>
