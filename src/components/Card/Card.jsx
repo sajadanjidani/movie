@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { HeroDatas } from "../../pages/Home/data/HeroDatas";
 import CardButton from "./CardButton";
 
-export default function Card() {
+export default function Card({id , poster}) {
   return (
     <Link
-      to="/items"
+      to={`/items/${id}`}
       draggable={false}
       className="
         min-w-50
@@ -18,7 +17,7 @@ export default function Card() {
         select-none
       "
       style={{
-        backgroundImage: `url(${HeroDatas[0].cover})`,
+        backgroundImage: `url(${poster})`,
       }}
     >
       <CardButton />

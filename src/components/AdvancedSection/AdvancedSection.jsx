@@ -8,7 +8,7 @@ import CategorySlider from "../CategorySlider/CategorySlider";
 import { FaArrowRight } from "react-icons/fa";
 
 
-export default function AdvancedSection({label , moreAddress}) {
+export default function AdvancedSection({label , moreAddress , datas}) {
   return (
     <div className="w-full h-auto mt-24 px-14">
     
@@ -29,12 +29,13 @@ export default function AdvancedSection({label , moreAddress}) {
       </div>
     
       {/* Category Slider */}
-
-      <CategorySlider />
+        {label != 'Trends' ? (
+          <CategorySlider />
+        ) : ''}
 
       {/* slider section */}
 
-      <CardSlider />
+      <CardSlider category={label} items={datas}/>
 
     </div>
   )
