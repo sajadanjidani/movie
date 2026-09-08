@@ -4,7 +4,6 @@ import { useCategorySlider } from "../../context/CategorySliderContext";
 
 
 export default function CardSlider({
-  category,
   items = []
 }) {
 
