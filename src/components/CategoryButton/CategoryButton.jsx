@@ -1,28 +1,83 @@
-import { useCategorySlider } from "../../context/CategorySliderContext";
+import { 
+  useCategorySlider 
+} from "../../context/CategorySliderContext";
 
-export default function CategoryButton({ title, value }) {
-  const { categories, toggleCategory } = useCategorySlider();
 
-  const isSelected = categories.includes(value);
+
+export default function CategoryButton({
+  title,
+  value
+}) {
+
+
+  const {
+    selectedCategories,
+    toggleCategory
+  } = useCategorySlider();
+
+
+
+  const checked =
+    selectedCategories.includes(value);
+
+
 
   return (
-    <label className="group inline-block my-2 cursor-pointer text-nowrap">
+
+    <label
+      className="
+      group
+      inline-block
+      hover:cursor-pointer
+      my-2
+      text-nowrap
+      "
+    >
+
+
       <input
+
         type="checkbox"
-        value={value}
-        checked={isSelected}
-        onChange={() => toggleCategory(value)}
+
+        checked={checked}
+
+        onChange={() =>
+          toggleCategory(value)
+        }
+
         className="sr-only"
+
       />
 
+
+
       <span
+
         className={`
-          mt-3 inline-block rounded-4xl border border-[#EC5BAA] px-7 py-2
-          ${isSelected ? "bg-[#EC5BAA]" : ""}
+          px-7 py-2
+          border
+          border-[#EC5BAA]
+          rounded-4xl
+          mt-3
+          inline-block
+          ${
+            checked
+            ?
+            "bg-[#EC5BAA]"
+            :
+            ""
+          }
         `}
+
       >
+
         {title}
+
       </span>
+
+
     </label>
+
   );
+
 }
