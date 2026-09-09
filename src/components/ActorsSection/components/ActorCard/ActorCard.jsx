@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-export default function ActorCard({id , poster}) {
+export default function ActorCard({id , image}) {
   return (
     <Link
-      to={`/items/${id}`}
+      to={`/actor/${id}`}
       draggable={false}
       className="
         min-w-38
@@ -17,7 +17,7 @@ export default function ActorCard({id , poster}) {
         bg-red-600
       "
       style={{
-        backgroundImage: `url(${poster})`,
+        backgroundImage: `url(${image})`,
       }}
     >
     </Link>

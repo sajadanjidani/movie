@@ -1,5 +1,4 @@
-import actors from "../../../data/imdb/frontend/actors.json";
-
+import actors from '../../../data/imdb/output/actorsWithPopularity.json';
 
 // ==================================================
 // Actors
@@ -9,17 +8,29 @@ export function getActors() {
   return actors;
 }
 
+// ==================================================
+// Popular Actors
+// ==================================================
+
+export function getPopularActors(limit = 10) {
+  return [...actors]
+    .sort(
+      (a, b) =>
+        (b.stats?.popularityScore ?? 0) -
+        (a.stats?.popularityScore ?? 0)
+    )
+    .slice(0, limit);
+}
 
 // ==================================================
 // Actor By ID
 // ==================================================
 
 export function getActorById(actorId) {
-  return actors.find(
-    (actor) => actor.id === actorId
-  ) || null;
+  return (
+    actors.find((actor) => actor.id === actorId) || null
+  );
 }
-
 
 // ==================================================
 // Actors By Title
@@ -35,44 +46,37 @@ export function getActorsByTitle(titleId) {
   );
 }
 
-
 // ==================================================
 // Actor Movies
 // ==================================================
 
 export function getActorMovies(actorId) {
-  const actor =
-    getActorById(actorId);
+  const actor = getActorById(actorId);
 
   if (!actor) {
     return [];
   }
 
   return actor.titles.filter(
-    (title) =>
-      title.type === "movie"
+    (title) => title.type === "movie"
   );
 }
-
 
 // ==================================================
 // Actor Series
 // ==================================================
 
 export function getActorSeries(actorId) {
-  const actor =
-    getActorById(actorId);
+  const actor = getActorById(actorId);
 
   if (!actor) {
     return [];
   }
 
   return actor.titles.filter(
-    (title) =>
-      title.type === "series"
+    (title) => title.type === "series"
   );
 }
-
 
 // ==================================================
 // Search Actors
@@ -86,10 +90,9 @@ export function searchActors(query) {
     return [];
   }
 
-  return actors.filter(
-    (actor) =>
-      actor.name
-        ?.toLowerCase()
-        .includes(normalizedQuery)
+  return actors.filter((actor) =>
+    actor.name
+      ?.toLowerCase()
+      .includes(normalizedQuery)
   );
 }

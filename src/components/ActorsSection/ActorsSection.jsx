@@ -6,8 +6,6 @@ import ActorsSlider from './components/ActorsSlider/ActorsSlider'
 import { FaArrowRight } from "react-icons/fa";
 
 export default function ActorsSection({moreAddress , datas}) {
-    
-    console.log(datas)
 
     return (
       <div className="w-full h-auto mt-24 px-14">
@@ -30,7 +28,7 @@ export default function ActorsSection({moreAddress , datas}) {
 
         </div>
 
-          <ActorsSlider />
+          <ActorsSlider  actorDatas={datas}/>
 
       </div>
   )

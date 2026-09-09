@@ -8,12 +8,12 @@ import {
 } from "@/services/imdb/seriesService";
 
 import {
-  getActors,
+  getPopularActors,
 } from "@/services/imdb/actorService";
 
 export const sectionDatas = [
     { id : 1 , label : 'Trends' , moreAddress : null , datas : getPopularMovies(10)},
     { id : 2 , label : 'Movies' , moreAddress : '/Movies' , datas : getMovies()},
     { id : 3 , label : 'Series' , moreAddress : '/Series' , datas : getSeries()},
-    { id : 4 , label : 'Charactors' , moreAddress : '/Charactors' , datas : getActors()}
+    { id : 4 , label : 'Charactors' , moreAddress : '/Charactors' , datas : getPopularActors(10)}
 ]

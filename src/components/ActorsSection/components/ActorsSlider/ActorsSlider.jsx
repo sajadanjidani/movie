@@ -2,8 +2,12 @@ import useEmblaCarousel from "embla-carousel-react";
 import ActorCard from "../ActorCard/ActorCard";
 
 
-export default function ActorsSlider(){
-  
+export default function ActorsSlider({actorDatas}){
+
+    let actorDatasArray = actorDatas
+
+    console.log(actorDatasArray)
+
     const [emblaRef] =
         useEmblaCarousel({
           loop:false,
@@ -19,16 +23,12 @@ export default function ActorsSlider(){
 
       <div className="flex mt-5 gap-10">
 
-        <ActorCard />
-        <ActorCard />
-        <ActorCard />
-        <ActorCard />
-        <ActorCard />
-        <ActorCard />
-        <ActorCard />
-        <ActorCard />
-        <ActorCard />
-        <ActorCard />
+
+      {
+        actorDatasArray.map((actor) => 
+          <ActorCard key={actor.id} {...actor}/>
+        )
+      }
 
       </div>
 
