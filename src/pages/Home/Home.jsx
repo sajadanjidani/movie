@@ -1,6 +1,7 @@
 import Hero from './components/Hero/Hero'
 import AdvancedSection from '../../components/AdvancedSection/AdvancedSection'
 import GoldenGlobeSection from './components/GoldenGlobeSection/GoldenGlobeSection'
+import ActorsSection from '../../components/ActorsSection/ActorsSection'
 // datas
 import { sectionDatas } from '../../data/sectionDatas'
 
@@ -21,7 +22,7 @@ export default function Home() {
       <AdvancedSection {...sectionDatas[2]}/>
       
       {/* Actors */}
-      <AdvancedSection {...sectionDatas[3]}/>
+      <ActorsSection {...sectionDatas[3]}/>
       
     </div>
   )

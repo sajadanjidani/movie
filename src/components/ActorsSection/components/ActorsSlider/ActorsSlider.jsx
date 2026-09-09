@@ -1,61 +1,16 @@
 import useEmblaCarousel from "embla-carousel-react";
-import { useCategorySlider } from "../../context/CategorySliderContext";
+import ActorCard from "../ActorCard/ActorCard";
 
 
-export default function ActorsSlider({
-  items = []
+export default function ActorsSlider(){
   
-  }) {
+    const [emblaRef] =
+        useEmblaCarousel({
+          loop:false,
+          dragFree:false,
+        });
 
-  const {
-    selectedCategories = []
-  } = useCategorySlider();
-
-
-
-  let filteredData = items;
-
-
-
-  if (selectedCategories.length > 0) {
-
-    filteredData = items.filter(item =>
-
-      item.genres?.some(genre =>
-
-        selectedCategories.some(selected =>
-
-          genre.toLowerCase().trim() ===
-          selected.toLowerCase().trim()
-
-        )
-
-      )
-
-    );
-
-  }
-
-
-  filteredData =
-    filteredData
-      .sort(
-        (a,b) =>
-          b.rating - a.rating
-      )
-      .slice(0,10);
-
-
-
-  const [emblaRef] =
-    useEmblaCarousel({
-      loop:false,
-      dragFree:false,
-    });
-
-
-
-  return (
+    return (
 
     <div
       ref={emblaRef}
@@ -64,17 +19,16 @@ export default function ActorsSlider({
 
       <div className="flex mt-5 gap-10">
 
-        {
-          filteredData.map(item => (
-
-            <ActorCard
-              key={item.id}
-              {...item}
-            />
-
-          ))
-        }
-
+        <ActorCard />
+        <ActorCard />
+        <ActorCard />
+        <ActorCard />
+        <ActorCard />
+        <ActorCard />
+        <ActorCard />
+        <ActorCard />
+        <ActorCard />
+        <ActorCard />
 
       </div>
 

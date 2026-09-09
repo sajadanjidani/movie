@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import { CategorySliderProvider } from "../../context/CategorySliderContext";
 
 import ActorsSlider from './components/ActorsSlider/ActorsSlider'
 
 // icons
 import { FaArrowRight } from "react-icons/fa";
 
-export default function ActorsSection({moreAddress}) {
-  return (
-    <CategorySliderProvider>
+export default function ActorsSection({moreAddress , datas}) {
+    
+    console.log(datas)
 
+    return (
       <div className="w-full h-auto mt-24 px-14">
 
         <div className="flex items-center justify-between">
@@ -33,7 +33,5 @@ export default function ActorsSection({moreAddress}) {
           <ActorsSlider />
 
       </div>
-
-    </CategorySliderProvider>
   )
 }
