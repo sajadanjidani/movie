@@ -20,6 +20,9 @@ export default function Home() {
       {/* Series */}
       <AdvancedSection {...sectionDatas[2]}/>
       
+      {/* Actors */}
+      <AdvancedSection {...sectionDatas[3]}/>
+      
     </div>
   )
 }

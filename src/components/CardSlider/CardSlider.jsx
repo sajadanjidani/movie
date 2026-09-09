@@ -5,8 +5,8 @@ import { useCategorySlider } from "../../context/CategorySliderContext";
 
 export default function CardSlider({
   items = []
-}) {
-
+  
+  }) {
 
   const {
     selectedCategories = []

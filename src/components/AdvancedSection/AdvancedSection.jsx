@@ -38,15 +38,9 @@ export default function AdvancedSection({
         </div>
 
 
-        {label !== "Trends" && (
-          <CategorySlider />
-        )}
+        {label !== "Trends" && label !== "Charactors" && ( <CategorySlider /> )}
 
-
-        <CardSlider
-          category={label}
-          items={datas}
-        />
+        <CardSlider category={label} items={datas}/>
 
       </div>
 
