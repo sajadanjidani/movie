@@ -4,6 +4,7 @@ import GoldenGlobeSection from './components/GoldenGlobeSection/GoldenGlobeSecti
 import ActorsSection from '../../components/ActorsSection/ActorsSection'
 import FrequentlyQuestionsSection from '../../components/FrequentlyQuestionsSection/FrequentlyQuestionsSection'
 import StudiosSection from './components/StudiosSection/StudiosSection'
+import Footer from '../../layout/Footer/Footer'
 // datas
 import { sectionDatas } from '../../data/sectionDatas'
 
@@ -31,6 +32,9 @@ export default function Home() {
 
       {/* Studios */}
       <StudiosSection />
+
+      {/* footer */}
+      <Footer />
 
     </div>
   )
