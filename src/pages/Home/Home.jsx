@@ -3,12 +3,13 @@ import AdvancedSection from '../../components/AdvancedSection/AdvancedSection'
 import GoldenGlobeSection from './components/GoldenGlobeSection/GoldenGlobeSection'
 import ActorsSection from '../../components/ActorsSection/ActorsSection'
 import FrequentlyQuestionsSection from '../../components/FrequentlyQuestionsSection/FrequentlyQuestionsSection'
+import StudiosSection from './components/StudiosSection/StudiosSection'
 // datas
 import { sectionDatas } from '../../data/sectionDatas'
 
 export default function Home() {
   return (
-    <div className='overflow-x-hidden'>
+    <div>
       <Hero />
       
       {/* Trends */}
@@ -29,7 +30,7 @@ export default function Home() {
       <FrequentlyQuestionsSection />
 
       {/* Studios */}
-      
+      <StudiosSection />
 
     </div>
   )
