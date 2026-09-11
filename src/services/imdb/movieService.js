@@ -82,8 +82,3 @@ export function searchMovies(query) {
         .includes(normalizedQuery)
   );
 }
-
-console.log(
-  "Movies loaded:",
-  movies.length
-);

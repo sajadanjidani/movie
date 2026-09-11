@@ -6,8 +6,6 @@ export default function ActorsSlider({actorDatas}){
 
     let actorDatasArray = actorDatas
 
-    console.log(actorDatasArray)
-
     const [emblaRef] =
         useEmblaCarousel({
           loop:false,
