@@ -28,6 +28,9 @@ export default function Home() {
       {/* FAQ */}
       <FrequentlyQuestionsSection />
 
+      {/* Studios */}
+      
+
     </div>
   )
 }
